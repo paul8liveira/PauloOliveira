@@ -1,0 +1,43 @@
+<tr id="trPortfolio_<%= portfolio.id %>">
+	<td class="middle">
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<%= image_tag portfolio.avatar.url(:thumb), class: "media-object" %>
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading"><%= portfolio.name %></h4>
+				<address>
+				<strong><%= portfolio.language.name %></strong><br>
+				<%= portfolio.description %>
+				</address>
+			</div>
+		</div>
+	</td>
+	<td width="100" class="middle">
+		<div>
+			<button type="button" class="btn btn-circle btn-default btn-xs" data-toggle="modal" data-target="#UpdTrabalhoModal_<%= portfolio.id %>">
+			  <i class="glyphicon glyphicon-edit"></i>
+			</button>			
+			<%= link_to portfolio_path(portfolio), :method => :delete, class: "btn btn-circle btn-danger btn-xs", title: "Delete", data: { confirm: "Tem certeza que deseja deletar?" }, remote: true do %>
+				<i class="glyphicon glyphicon-remove"></i>
+			<% end %>									
+		</div>
+	</td>
+</tr>		
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="UpdTrabalhoModal_<%= portfolio.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Editar trabalho</h4>
+      </div>
+      <div class="modal-body">        
+        <%= render :partial => 'form_update', :locals => { :portfolio => portfolio } %>
+      </div>
+    </div>
+  </div>
+</div>

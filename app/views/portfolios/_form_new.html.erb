@@ -1,0 +1,97 @@
+<%= form_for @portfolio, remote: true, html: { multipart: true }, authenticity_token: true do |f| %>        
+  <div class="panel-body">
+    <% if @portfolio.errors.any? %>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-danger">
+            <p><strong>
+              <%= pluralize(@portfolio.errors.count, "erro") %> ao tentar salvar o registro:
+            </strong></p>            
+            <ul>
+                <% @portfolio.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    
+    <div class="form-horizontal">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <%= f.label :name, class: "control-label col-md-3" %>
+            <div class="col-md-8">
+              <%= f.text_field :name, class: "form-control portfolio" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :description, class: "control-label col-md-3" %>
+            <div class="col-md-8">
+              <%= f.text_area :description, class: "form-control portfolio" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :language_id, class: "control-label col-md-3" %>
+            <div class="col-md-5">
+              <%= f.collection_select :language_id, Language.all, :id, :name, {}, class: "form-control", multiple: false %>
+            </div>
+            <div class="col-md-3">
+              <a href="#" id="add-group-btn" class="btn btn-default btn-block">Add linguagem</a>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :url_access, class: "control-label col-md-3" %>
+            <div class="col-md-8">
+              <%= f.text_field :url_access, class: "form-control portfolio" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :birth_date, class: "control-label col-md-3" %>
+            <div class="col-md-8">
+              <%= f.text_field :birth_date, class: "form-control portfolio" %>
+            </div>
+          </div>          
+
+          <div class="form-group" id="add-new-group" style="display: none;">
+            <div class="col-md-offset-3 col-md-8">
+              <div class="input-group">
+                <input type="text" name="new_group" id="new_group" class="form-control">
+                <span class="input-group-btn">
+                  <a href="#" class="btn btn-default">
+                    <i class="glyphicon glyphicon-ok"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="fileinput fileinput-new" data-provides="fileinput">
+            <div class="fileinput-new thumbnail" style="width: 100px; height: 100px;">
+              <%= image_tag @portfolio.avatar.url(:thumb) %>
+            </div>
+            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+            <div class="text-center">
+              <span class="btn btn-default btn-file">
+                <span class="fileinput-new">Choose Photo</span>
+                <span class="fileinput-exists">Change</span>
+                <%= f.file_field :avatar %>
+              </span>
+              <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <%= f.submit "Save", class: "btn btn-primary" %>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+<% end %>

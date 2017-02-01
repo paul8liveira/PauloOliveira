@@ -1,0 +1,5 @@
+$('#UpdTrabalhoModal_<%= @portfolio.id %>').modal('hide');
+$('#trPortfolio_<%= @portfolio.id %>').fadeOut(500, function() {
+	$(this).remove();
+	$('#tableContent').prepend('<%= j render @portfolio %>');
+});

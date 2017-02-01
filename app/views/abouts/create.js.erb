@@ -1,0 +1,8 @@
+<% if @about.errors.count > 0 %> 
+	$('#modalBodyNew').html("<%= escape_javascript(render 'form_new')%>"); 
+<% else %>
+	$('#AddAboutModal').modal('hide');
+	$('.about').val('');
+	$('#tableContent').append('<%= j render @about %>');
+	$('#trAbout_<%= @about.id %>').hide().fadeIn(1000);
+<% end %>

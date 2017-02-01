@@ -1,0 +1,8 @@
+<% if @portfolio.errors.count > 0 %> 
+	$('#modalBodyNew').html("<%= escape_javascript(render 'form_new')%>"); 
+<% else %>
+	$('#AddTrabalhoModal').modal('hide');
+	$('.portfolio').val('');
+	$('#tableContent').prepend('<%= j render @portfolio %>');
+	$('#trPortfolio_<%= @portfolio.id %>').hide().fadeIn(1000);	
+<% end %>

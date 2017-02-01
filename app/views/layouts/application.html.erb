@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PauloOliveira</title>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag 'application', params[:controller], :media => "all", 'data-turbolinks-track': 'reload' %>
+		<link href="https://fonts.googleapis.com/css?family=Abel:400,700" rel="stylesheet" type="text/css">
+    	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>			
+	</head>
+	<body id="page-top" class="index">	
+		<% flash.each do |type, message| %>							
+			<div class="col-md-12">
+				<%= content_tag :div, class: "alert alert-#{type} alert-dismissible", role: "alert" do %>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>			
+					<%= message %>
+				<% end %>		
+			</div>
+		<% end %>	
+		<%= yield %>
+		<%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+	</body>
+</html>

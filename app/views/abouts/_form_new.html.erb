@@ -1,0 +1,37 @@
+<%= form_for @about, remote: true, html: { multipart: true } do |f| %>        
+  <div class="panel-body">
+    <% if @about.errors.any? %>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-danger">
+            <p><strong>
+              <%= pluralize(@about.errors.count, "erro") %> ao tentar salvar o registro:
+            </strong></p>            
+            <ul>
+              <% @about.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="form-horizontal">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <%= f.label :about, class: "control-label col-md-3" %>
+            <div class="col-md-8">
+              <%= f.text_area :about, class: "form-control about" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <%= f.submit "Save", class: "btn btn-primary" %>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+<% end %>

@@ -1,0 +1,26 @@
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Portfólio</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <% index = 1 %>
+      <% @portfolios.each do |portfolio| %>                 
+        <%= content_tag(:div, class: "col-sm-4 portfolio-item") do %>
+          <%= link_to "#portfolioModal#{index}", class: "portfolio-link", :data => { :toggle => "modal" } do %>
+            <%= content_tag(:div, class: "caption") do %>
+              <%= content_tag(:div, class: "caption-content") do %>
+                <i class="fa fa-search-plus fa-3x"></i>
+              <% end %>            
+            <% end %>
+            <%= image_tag portfolio.avatar.url(:original), :class => 'img-responsive' %>            
+          <% end %>
+        <% end %>
+        <% index += 1 %>
+      <% end %>    
+    </div>
+  </div>
+</section>

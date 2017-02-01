@@ -1,0 +1,44 @@
+<footer class="text-center">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">        
+        <div class="footer-col col-md-12">
+          <h3>Me encontre por aí...</h3>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/prOliveira" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/PaulooOliveira" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://br.linkedin.com/in/paulo-oliveira-603b96137" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6" style="text-align:left">
+              Copyright © PauloOliveira 2016   
+          </div>
+          <div class="col-lg-6" style="text-align:right">
+            <% if user_signed_in? %>
+              <%= link_to "Logout", destroy_user_session_path, :method => 'delete' %>
+            <% else %>
+              <%= link_to "Login", new_user_session_path %>                
+            <% end %>              
+          </div>               
+        </div>
+    </div>
+  </div>
+</footer>
+
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>

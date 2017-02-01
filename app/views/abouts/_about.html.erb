@@ -1,0 +1,35 @@
+<tr id="trAbout_<%= about.id %>">
+	<td class="middle">
+		<div class="media">
+			<div class="media-left"></div>
+			<div class="media-body">
+				<%= about.about %>
+			</div>
+		</div>
+	</td>
+	<td width="100" class="middle">
+		<div>
+			<button type="button" class="btn btn-circle btn-default btn-xs" data-toggle="modal" data-target="#UpdAboutModal_<%= about.id %>">
+			  <i class="glyphicon glyphicon-edit"></i>
+			</button>			
+			<%= link_to about_path(about), :method => :delete, class: "btn btn-circle btn-danger btn-xs", title: "Delete", data: { confirm: "Tem certeza que deseja deletar?" }, remote: true do %>
+				<i class="glyphicon glyphicon-remove"></i>
+			<% end %>									
+		</div>
+	</td>
+</tr>		
+
+<!-- Modal -->
+<div class="modal fade" id="UpdAboutModal_<%= about.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Editar sobre</h4>
+      </div>
+      <div class="modal-body" id="modalBodyUpd_<%= about.id %>">        
+        <%= render :partial => 'form_update', :locals => { :about => about } %>
+      </div>
+    </div>
+  </div>
+</div>
