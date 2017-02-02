@@ -14,6 +14,7 @@ end
 # Use pg as the database for Active Record on production enviroment
 group :production do
 	gem 'pg'
+	gem 'rails_12factor'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
