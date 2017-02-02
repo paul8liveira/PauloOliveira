@@ -56,6 +56,9 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "PauloOliveira_#{Rails.env}"
   config.action_mailer.perform_caching = false
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { host: 'http://paulooliveira.herokuapp.com', port: 80 }
+  config.action_mailer.delivery_method = :smtp
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -83,4 +86,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #evitar erro de spoof do paperclip
+  Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin;C:\ImageMagick'  
+  Paperclip.options[:swallow_stderr] = false
 end
