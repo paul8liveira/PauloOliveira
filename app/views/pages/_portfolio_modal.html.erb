@@ -15,7 +15,7 @@
                         <h2><%= portfolio.name %></h2>
                         <hr class="star-primary">
                         <%= image_tag portfolio.avatar.url(:original), :class => 'img-responsive img-centered' %>
-                        <p><%= portfolio.description %></p>
+                        <p><%= portfolio.description.html_safe %></p>
                         <ul class="list-inline item-details">
                             <li>
                               <strong>Acesso:</strong> <a href="<%= portfolio.url_access %>" target="_blank"><%= portfolio.url_access %></a>
