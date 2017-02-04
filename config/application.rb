@@ -12,7 +12,7 @@ module PauloOliveira
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.time_zone = 'America/Sao_Paulo'
+    config.time_zone = 'Brasilia'
 
     ActionMailer::Base.smtp_settings = {
     	:address               => 'smtp.gmail.com',
