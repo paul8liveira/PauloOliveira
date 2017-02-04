@@ -1,0 +1,7 @@
+<p>Olá, meu nome Paulo Oliveira!</p>    
+<p>Sou natural de Capão Bonito (terra abençoada), interior de São Paulo. Atualmente moro em Piracicaba, onde cursei Analise e Desenvolvimento de Sistemas no IFSP. Até chegar aqui onde estou atualmente foi uma caminhada e tanto. </p>
+<p>Inicie os estudos aos 17 anos para me tornar um técnico em informática. A partir desse momento, trabalho com tecnologia deste então. Batalhei grana pra estudar desde sempre, e nunca parei de aprender e me atualizar profissionalmente, e sinto que nunca vou parar! O conhecimento me move, por isso levo essa frase que li uma vez como mantra <strong>"Quanto mais eu aprendo, melhor eu sei o quão pouco sei"</strong>.
+<p>Trabalhei em fábrica de software especializada em gestão pública, outra especializada em transporte e logística, atualmente trabalho na TI de uma usina, sempre trabalhando como programador. </p>
+<p>Como hobby, gosto de praticar esportes e estudar línguas, atualmente corrida é o que mais faço e sempre que posso, estudo russo, alemão e francês. </p>      
+<p>Quer saber mais? Não deixe de entrar em contato, se preferir baixe meu currículo ou me encontre por aí no final da página.</p>
+<p>Ah! E antes que você se pergunte. Quem nasce em Capão Bonito .. capão-bonitense :)</p>

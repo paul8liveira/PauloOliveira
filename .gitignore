@@ -22,6 +22,3 @@
 
 # Ignore application configuration
 /config/application.yml
-
-#texto do sobre
-about.txt
