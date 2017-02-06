@@ -95,8 +95,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #evitar erro de spoof do paperclip
-  Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin;C:\ImageMagick'  
-  Paperclip.options[:swallow_stderr] = false
+  #Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin;C:\ImageMagick'  
+  #Paperclip.options[:swallow_stderr] = false
 
   #S3 storage para paperclip
   config.paperclip_defaults = {
