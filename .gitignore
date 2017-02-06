@@ -22,3 +22,6 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore s3 config
+/_conteudo/rootkey.csv

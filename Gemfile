@@ -50,7 +50,7 @@ gem 'font-awesome-rails'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 #Upload
 gem "paperclip", "~> 5.0.0"
-gem "aws-sdk", "~> 2"
+gem "aws-sdk", "~> 2.3"
 #Seletor de imagem
 gem 'jasny-bootstrap-rails', '~> 3.1', '>= 3.1.3'
 #MySQL
