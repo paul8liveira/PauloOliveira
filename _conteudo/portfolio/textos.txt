@@ -1,17 +1,23 @@
-ETB
+﻿ETB 11/2015
 <p style="text-align:justify">Comecei a trabalhar na ETB assim que cheguei em Piracicaba. Logo percebi que a maneira de desenvolver o trabalho lá era morosa. Por isso desenvolvi esse sistema.</p> <p style="text-align:justify">Ele é basicamente um gestor de conteúdo, todas as aulas da plataforma de ensino da empresa são cadastradas nesse sistema. O sistema tem duas funções principais:</p> <ul style="text-align:justify; font-size: 17px"> <li><b>Simulador:</b> Durante o desenvolvimento da aula, é possível simular como se estivesse na plataforma dae ensino. Isso garantia que a aula iria 100% completa ao ambiente de produção.</li> <li><b>Gerador de xml:</b> A plataforma do ambiente de ensino da empresa é alimentada através de arquivos .xml. Depois de finalizada as aulas no sistema, é possível exportar todo conteúdo para esse tipo de arquivo.</li> </ul> <p style="text-align:justify">Infelizmente a empresa não utiliza mais o sistema... :(</p>
 
-ETEC
+ETEC 2010/2011
 <p style="text-align:justify">Me formei como técnico em informática na ETEC Dr. Celso Charuri e como presente de gratidão, desenvolvi o site à escola. O site conta com um cadastro de usuários e um cadastro de notícias que aparecem na página principal do site.</p>
 
-DJ Bot
+DJ Bot 07/2016
 <p style="text-align:justify"><strong>Você conhece o @TocaEssaDJBot?</strong></p> <p style="text-align:justify">O DJ Bot é um robô que trabalha dentro do aplicativo Telegram, com a ajuda dele você pode criar uma playlist colaborativa com seus convidados!</p> <p style="text-align:justify">Como ele nasceu?</p> <p style="text-align:justify">Sempre senti a necessidade de poder escolher as músicas que queria ouvir durante uma festa, evento, bar, etc. Mesmo que eu pudesse pedir ao DJ, nem sempre ele tocava... </p> <p style="text-align:justify">Agora, imagine se você pudesse ao alcance de um click escolher a música que você quer ouvir?! E o melhor, não só você mas todos que estão no mesmo lugar?! Acredito que isso poderia colaborar muito para que o clima da festa sempre estivesse de acordo com a nossa vontade! Por isso criei o DJ Bot, o DJ robô!</p>
 
-Portfolio
+Portfolio 01/2017
 <p style="text-align:justify">Meu portfólio! Sempre quis fazer um portfólio para divulgar alguns trabalhos. Também a um tempo venho me interessando por Ruby on Rails, juntei o útil ao agradável e cabum! Deu isso! O portfólio é totalmente dinâmico, isso quer dizer que o conteúdo do portfólio pode ser atualizado sem que seja necessário mexer no código.</p> <p style="text-align:justify">É claro, é meu primeiro projeto em RoR mas, vejo que farei muitos outros por aí...</p>
 
-Gobi
+Gobi 11/2016
 <p style="text-align:justify">O projeto Gobi foi idealizado depois da leitura de uma matéria onde um cão correu ao lado de um desconhecido, até o final de uma ultramaratona que ocorreu no deserto de Gobi. </p> <p style="text-align:justify">O Gobi é um app que nasceu para ajudar as pessoas a entenderem melhor onde gastam seu dinheiro. De uma forma simples, você poderá provisionar suas despesas e informar detalhadamente como gastou cada uma delas.</p> <p style="text-align:justify">Assim, você vai perceber como cada grão de areia é capaz de formar um deserto financeiro!</p> <p style="text-align:justify">Infelizmente ainda não tive tempo(dinheiro) para publicar o app. Caso tenha interesse, você pode baixá-lo diretamente através da url abaixo. É importante que você faça isso do seu celular.</p>
 
-Sacre
+Sacre 04/2011
 <p style="text-align:justify">O sistema SiCE da escola Sacre Coeur des Enfants foi meu primeiro desafio como desenvolvedor de software. A partir dele foi que percebi que poderia desenvolver um sistema inteiro sozinho. Desde 2011 quando ele foi desenvolvido, o sistema controla os dados pessoais dos alunos, notas, faltas e gera algumas declarações. </p> <p style="text-align:justify">O sistema também conta com uma área de acesso aos pais para que eles possam acompanhar em tempo real o desempenho do seu filho.</p> <p style="text-align:justify">Tudo muito simples e funcional. </p>
+
+Glossário 06/2016
+<p style="text-align:justify">Projeto voltado à bolsa PIVICT voluntária do IFSP.</p>
+<p style="text-align:justify">O projeto de pesquisa tem como objetivo desenvolver um software que funcionará como glossário bilíngue de inglês/português para a área de informática. O glossário terá como objetivo auxiliar na tradução dos grupos nominais, uma dificuldade muito enfrentada por estudantes e profissionais dessa área. Além disso, o usuário do glossário também poderá ouvir a pronúncia dos grupos nominais, ajudando no desenvolvimento da
+compreensão auditiva, uma habilidade importante para esse público. Esse projeto fará parte de um projeto maior intitulado “Elaboração de material didático complementar de inglês para o curso de Análise e Desenvolvimento de Sistemas do IFSP - Campus Piracicaba”. A proposta surgiu a partir da constatação da presença cada vez mais marcante da língua inglesa no ambiente acadêmico e profissional da área de informática, bem como da dificuldade de interpretar textos em que fazem parte grupos nominais. O projeto será desenvolvido usando programas como PHP e My SQL.
+A pesquisa será realizada no IFSP-campus Piracicaba, no período de agosto de 2015 a julho de 2016.</p>
