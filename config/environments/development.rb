@@ -66,4 +66,5 @@ Rails.application.configure do
   #evitar erro de spoof do paperclip
   Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin;C:\ImageMagick'  
   Paperclip.options[:swallow_stderr] = false
+  
 end

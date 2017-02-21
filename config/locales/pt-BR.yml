@@ -3,11 +3,17 @@ pt-BR:
   activerecord:
     models:
       about: "Sobre"
+      portfolio: "Portfólio"
     attributes:
       about:
         about: "Sobre"
         created_at: "Criado em"
-        updated_at: "Atualizado em"  
+        updated_at: "Atualizado em"
+      portfolio:
+        name: "Nome"
+        description: "Descrição"
+        url_access: "URL de acesso"
+        birth_date: "Data de nascimento"  
     errors:
       messages:
         record_invalid: 'A validação falhou: %{errors}'
