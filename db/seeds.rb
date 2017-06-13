@@ -21,6 +21,12 @@ Language.create([
 	},
 	{
 		name: "Genexus 9"
+	},
+	{
+		name: "Javascript"
+	},
+	{
+		name: "Java"
 	}	
 ])
 p "Created #{Language.count} language(s)"
