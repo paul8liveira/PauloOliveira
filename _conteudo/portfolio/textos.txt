@@ -21,3 +21,10 @@ Glossário 06/2016
 <p style="text-align:justify">O projeto de pesquisa tem como objetivo desenvolver um software que funcionará como glossário bilíngue de inglês/português para a área de informática. O glossário terá como objetivo auxiliar na tradução dos grupos nominais, uma dificuldade muito enfrentada por estudantes e profissionais dessa área. Além disso, o usuário do glossário também poderá ouvir a pronúncia dos grupos nominais, ajudando no desenvolvimento da
 compreensão auditiva, uma habilidade importante para esse público. Esse projeto fará parte de um projeto maior intitulado “Elaboração de material didático complementar de inglês para o curso de Análise e Desenvolvimento de Sistemas do IFSP - Campus Piracicaba”. A proposta surgiu a partir da constatação da presença cada vez mais marcante da língua inglesa no ambiente acadêmico e profissional da área de informática, bem como da dificuldade de interpretar textos em que fazem parte grupos nominais. O projeto será desenvolvido usando programas como PHP e My SQL.
 A pesquisa será realizada no IFSP-campus Piracicaba, no período de agosto de 2015 a julho de 2016.</p>
+
+VampNator 06/2017
+<p style="text-align:justify">VampNator é uma extensão do chrome que modifica as imagens do site que você estiver acessando por imagens do Vampeta! É muito simples de utilzar: </p>
+<p style="text-align:justify">1 - Baixe o arquivo VampNator.crx (essa é a extensão utilizada pelo chrome) </p>
+<p style="text-align:justify">2 - Vá para Mais Ferramentas/Extensões (ou digite no browser chrome://extensions/)</p>
+<p style="text-align:justify">3 - Arraste o arquivo baixado até a janela do browser e pronto!</p>
+<p style="text-align:justify">Espere até a pessoa acessar um site e veja a reação dela.</p>
